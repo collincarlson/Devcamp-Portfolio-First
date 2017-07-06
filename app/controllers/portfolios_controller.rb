@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
   layout 'portfolio'
   
   def index
-     @portfolio_items = Portfolio.all
+     @portfolio_item = Portfolio.all
   end
   
   def angular
@@ -10,8 +10,8 @@ class PortfoliosController < ApplicationController
   end
   
   def new
-    @portfolio_items = Portfolio.new
-    3.times { @portfolio_items.technologies.build } 
+    @portfolio_item = Portfolio.new
+    3.times { @portfolio_item.technologies.build } 
   end
   
   def create
