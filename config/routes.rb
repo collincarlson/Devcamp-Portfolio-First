@@ -10,4 +10,11 @@ Rails.application.routes.draw do
   resources :blogs
 
   root to: 'pages#home'
+  
+  resources :blogs do
+        member do
+            get :toggle_status
+        end
 end
+end
+
