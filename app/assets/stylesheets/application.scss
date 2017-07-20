@@ -161,9 +161,9 @@ body {
   }
 }
 
-.nav-links {
- margin: 0 8px; 
-}
+/*
+ * Custom Styles
+ */
 
 .card-block {
   color: black;
@@ -179,7 +179,12 @@ body {
 }
 
 .login > .card {
- width: 22rem;
- margin: 0 auto;
- float: none;
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
 }
