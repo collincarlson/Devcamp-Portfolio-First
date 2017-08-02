@@ -1,6 +1,6 @@
 require_relative 'boot'
 
-require "rails"
+require "rails/all"
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
@@ -18,5 +18,6 @@ Bundler.require(*Rails.groups)
 
 module DevcampPortfolio
   class Application < Rails::Application
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
